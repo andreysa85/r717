@@ -20,11 +20,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '5)p)zl0-__(=lqfd+9aky4s-$&lr4_7c4q)62h7d@udn)jpbn='
-#SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY','5)p)zl0-__(=lqfd+9aky4s-$&lr4_7c4q)62h7d@udn)jpbn=')
+# SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY','5)p)zl0-__(=lqfd+9aky4s-$&lr4_7c4q)62h7d@udn)jpbn=')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 #DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
+DEBUG = False
 ALLOWED_HOSTS = ['127.0.0.1', '192.168.1.152', '176.36.57.129']
 
 
@@ -131,12 +130,6 @@ LANGUAGES = (
     ('ru-ru', gettext('Russia')),
     )
 
-# LANGUAGES = (
-#     ('uk-ua', 'Ukraine'),
-#     ('ru-ru', 'Russia'),
-#     )
-
-
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale/'),
 )
@@ -159,8 +152,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR), 'static']
 
 # Настройка для СК едитора 
-#STATIC_ROOT=os.path.join(BASE_DIR, 'static')
-
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 
 CKEDITOR_CONFIGS = {
@@ -229,6 +220,21 @@ CKEDITOR_CONFIGS = {
         ]),
     }
 }
+
+# Настройка безопасности 
+# CSRF_COOKIE_SECURE = True
+# CSRF_COOKIE_SAMESITE = 'Strict'
+# SESSION_COOKIE_SECURE = True
+# SECURE_BROWSER_XSS_FILTER = True
+# SECURE_CONTENT_TYPE_NOSNIFF = True
+# SECURE_SSL_REDIRECT = True
+# X_FRAME_OPTIONS = 'DENY'
+# SECURE_HSTS_SECONDS = 300  #  15768000 (6 months)
+# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+# SECURE_HSTS_PRELOAD = True
+
+with open(os.path.join(BASE_DIR, 'r717/secure.txt')) as f:
+    SECRET_KEY = f.read().strip()
 
 # Настройка почтового ящика для отправки писем
 #EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
