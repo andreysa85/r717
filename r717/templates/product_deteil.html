@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+
+{% block content %}
+<div class="container">
+	<div class="product__title">
+		{{product.name}}
+	</div>
+	<div class="about__product">
+		<div class="about__product_foto">
+			<img src="/media/{{product.img_small}}" class="rounded" alt="...">
+			<div class="about__product_foto_links">
+				{% if product.pdf != '' %}
+				<a class="fancybox btn btn-danger float-center" href="/media/{{product.pdf}}" data-fancybox-type="iframe">{% trans 'Інструкція' %}</a>	
+				{% endif %}			
+			</div>			
+		</div>
+		<div class="about__product_description">
+			{{product.desctiption|safe}}
+
+			<div class="about__product_btn_buy">
+				<br>
+				<form action="{% url 'cart_add' product.id %}" method="POST">
+					
+					{{cart_product_form }}
+					{% csrf_token %}
+					<button class="btn_buy" type="submit">{% trans "До кошика"%}</button>
+				</form>			
+			</div>
+		</div>
+	</div>
+	<div class="about__product_video">
+		{% if product.video_url != None %}
+		<div class="about__product_video_first">
+			<iframe class="embed-responsive-item" width="400" height="315" src="{{product.video_url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="about__product_video_second"> 
+			<iframe class="embed-responsive-item" width="400" height="315" src="{{product.video_url_2}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		{% endif %}
+	</div>
+</div>
+{% endblock %}

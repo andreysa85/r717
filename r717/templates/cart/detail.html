@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+<br>
+<div class="container">
+
+    {% if cart|length <= 0 %}
+    <div class="card_title">  
+        {% trans "Ваш кошик порожній "%}
+    </div>
+    {% else %}
+    <div class="card_title">  
+        {% trans "Товари у вашому кошику:"%}
+    </div>
+    <div class="table-responsive">     
+        <table class="table table-hover table-sm">
+          <thead >
+            <tr>
+              <th scope="col">{% trans "Фото"%}</th>
+              <th scope="col">{% trans "Назва"%}</th>
+              <th scope="col">{% trans "Ціна"%}</th>
+              <th scope="col">{% trans "К-сть"%}</th>
+              <th scope="col"></th>
+          </tr>
+      </thead>
+      <tbody>
+        {% for item in cart %}
+        {% with product=item.product %}
+        <tr>
+          <td><img src="/media/{{product.img_small}}"></td>
+          <td>{{item.name}}</td>
+          <td>&euro;  {{item.price}}</td>
+          <td id = "quantity">{{item.quantity}}</td>
+          <td>
+              <div class="card_basket_item_control">
+                <a href="{% url 'cart_plus' product.id%}"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                <a href="{% url 'cart_minus' product.id%}"><i class="fa fa-minus" aria-hidden="true"></i></a>
+                <a href="{% url 'cart_remove' product.id%}"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+            </div>
+        </td>
+    </tr>
+    {% endwith %}
+    {% endfor %}
+
+</tbody>
+</table>
+</div>
+<div class="card_basket_item_button">
+
+    <a href="{% url 'order_create' %}" class="btn btn-danger float-center">
+        {% trans "Оформити замовлення"%} 
+    </a>
+    <a class="btn btn-danger float-center" href="{% url 'home' %}">
+        {% trans "Продовжити покупку "%}
+    </a>
+</div>
+{% endif %} 
+</div>
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+

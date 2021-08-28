@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+<div class="container">
+    <div class="order-info">
+        {% trans "Ваше замовлення:"%}
+        <div class="order-info_product">
+        <ul>
+            {% for item in cart %}
+            <li>
+                {{ item.quantity }} x {{ item.product.name }}
+                <span>&euro;  {{ item.total_price }}</span>
+            </li>
+            <br>
+            {% endfor %}
+        </ul>
+        </div>
+        <br>
+        <br>
+        <div class="total"> 
+        <p>{% trans "Разом до сплати :"%} &euro;  {{ cart.get_total_price }}</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="send_form"> 
+        <form  action="." method="post" class="order-form">
+            <div class="form-group">
+                <div class="form_lable">{% trans "Імя"%}</div> 
+                <br>
+                <div>{{form.first_name}}</div>
+                <br>
+                <div class="form_lable">{% trans "Прізвище"%}</div> 
+                <br>
+                <div>{{form.last_name}}</div>
+                <br>
+                <div class="form_lable">{% trans "Телефон в форматі 0501234567"%}</div> 
+                <br>
+                <div>{{form.phone}}</div>
+                <br>
+                <p style="color:red; font-size: 15px; ">{{report}}</p>
+            </div>
+            <div class="card_basket_item_button">
+                <input type="submit" value="{% trans 'Відправити' %}" class="button_create_order">
+            </div>
+            {% csrf_token %}
+        </form>
+    </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,254 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-25 11:21+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: cart/forms.py:7
+msgid "Кількість"
+msgstr "Количество"
+
+#: home/forms.py:5
+msgid "Ваше Імя"
+msgstr "Ваше Имя"
+
+#: home/forms.py:7
+msgid "Ваш телефон"
+msgstr "Ваш телефон"
+
+#: home/forms.py:11
+msgid "Повідомлення"
+msgstr "Сообщение"
+
+#: r717/settings.py:130
+msgid "Ukraine"
+msgstr ""
+
+#: r717/settings.py:131
+msgid "Russia"
+msgstr ""
+
+#: templates/about.html:22
+msgid ""
+"\n"
+"        <p>  Розумні технології - це підрозділ, який займається постачанням "
+"професійних миючих засобів для обслуговування теплообмінного обладнання. \n"
+"        Надаються послуги консультування по вибору та використанню миючих "
+"засобів. \n"
+"        Питання відновлення продуктивності кліматичного обладнання є не менш "
+"актуальними, ніж впровадження нових проектів.\n"
+"        </p>\n"
+"        <p> Ми пропонуємо миючі засоби виробництва Advaced Engineering "
+"(Великобританія). Ці миючі засоби є продуктом впровадження новітніх "
+"технологій світової хімічної промисловості - так звана «розумна хімія». "
+"Головна особливість - це поетапність хімічної реакції, яка дозволяє "
+"відновити стан теплообмінної поверхні аналогічно новому апарату. Крім того "
+"використання професійних миючих засобів полегшує роботу людини. Навідміну "
+"від аналогів, продукти Advaced Engineering дбайливі до металів теплообмінної "
+"поверхні, адже містять інгібітори корозії, тому хімія вступає в реакцію саме "
+"з брудом, а не з металом.\n"
+"        Ці засоби можно придбати у нас.\n"
+"        \n"
+"    </p>\n"
+"    "
+msgstr ""
+
+#: templates/base.html:36 templates/base.html:91
+msgid "Головна"
+msgstr "Главная"
+
+#: templates/base.html:39 templates/base.html:92
+msgid "Про нас"
+msgstr "О нас"
+
+#: templates/base.html:42 templates/base.html:93
+msgid "Контакти"
+msgstr "Контакты"
+
+#: templates/base.html:71 templates/contact.html:120
+msgid "Промислова хімія"
+msgstr "Промышленная химия"
+
+#: templates/base.html:74 templates/contact.html:119
+msgid "Розумні технології "
+msgstr "Умные технологии"
+
+#: templates/base.html:77
+msgid "для "
+msgstr "для"
+
+#: templates/base.html:77
+msgid "вашого"
+msgstr "вашего"
+
+#: templates/base.html:77
+msgid "  бізнесу"
+msgstr " бизнеса"
+
+#: templates/base.html:101 templates/index.html:12
+msgid "Всі продукти"
+msgstr "Все продукты"
+
+#: templates/base.html:102
+msgid "Рідкі засоби"
+msgstr "Жидкие средства"
+
+#: templates/base.html:103
+msgid "Аерозольні засоби"
+msgstr "Аэрозольные средства"
+
+#: templates/base.html:104
+msgid "Додаткові засоби"
+msgstr "Дополнительные средства"
+
+#: templates/base.html:110
+msgid "Контактна інформація: "
+msgstr "Контактная информация:"
+
+#: templates/base.html:115 templates/contact.html:26
+msgid "Київ, вул. Петропавлівська 54а, оф. 202"
+msgstr "Киев, ул. Петропавловская 54а, оф. 202"
+
+#: templates/cart/detail.html:11
+#, fuzzy
+#| msgid "Сергій Задорожний "
+msgid "Ваш кошик порожній "
+msgstr "Сергей Задорожный"
+
+#: templates/cart/detail.html:15
+msgid "Товари у вашому кошику:"
+msgstr "Товары в вашей корзине:"
+
+#: templates/cart/detail.html:21
+msgid "Фото"
+msgstr "Фото"
+
+#: templates/cart/detail.html:22
+msgid "Назва"
+msgstr "Название"
+
+#: templates/cart/detail.html:23
+msgid "Ціна"
+msgstr "Цена"
+
+#: templates/cart/detail.html:24
+msgid "К-сть"
+msgstr "К-во"
+
+#: templates/cart/detail.html:53
+msgid "Оформити замовлення"
+msgstr "Оформить заказ"
+
+#: templates/cart/detail.html:56
+msgid "Продовжити покупку "
+msgstr "Продолжить покупку"
+
+#: templates/contact.html:11
+msgid "Наше місцезнаходження"
+msgstr "Наше местонахождение"
+
+#: templates/contact.html:23
+msgid "Про наш офіс"
+msgstr "О нашем офисе"
+
+#: templates/contact.html:47
+msgid "Написати нам"
+msgstr "Написать нам"
+
+#: templates/contact.html:77 templates/orders/order/create.html:44
+msgid "Відправити"
+msgstr "Отправить"
+
+#: templates/contact.html:102
+msgid "Станіслав Потапов"
+msgstr "Станислав Потапов"
+
+#: templates/contact.html:103 templates/contact.html:136
+msgid "Інженер-викладач"
+msgstr "Инженер-преподаватель"
+
+#: templates/contact.html:104 templates/contact.html:137
+msgid "Експерт з холодильної техніки"
+msgstr "Эксперт по холодильной техники"
+
+#: templates/contact.html:105
+msgid "Маркетолог."
+msgstr "Маркетолог."
+
+#: templates/contact.html:121
+#, fuzzy
+#| msgid "  бізнесу"
+msgid "Для вашого бізнесу"
+msgstr " бизнеса"
+
+#: templates/contact.html:135
+msgid "Сергій Задорожний "
+msgstr "Сергей Задорожный"
+
+#: templates/contact.html:138
+msgid "Менеджер з продажу."
+msgstr "Менеджер продаж"
+
+#: templates/index.html:42
+msgid "Оцінок :"
+msgstr "Оценок"
+
+#: templates/index.html:46 templates/product_deteil.html:28
+msgid "До кошика"
+msgstr "В корзину"
+
+#: templates/index.html:62
+msgid "Якщо у Вас виникли питання, зв'яжіться з нами :"
+msgstr "Если у Вас возникли вопросы, свяжитесь с нами:"
+
+#: templates/orders/order/create.html:6
+msgid "Ваше замовлення:"
+msgstr "Ваш заказ:"
+
+#: templates/orders/order/create.html:21
+msgid "Разом до сплати :"
+msgstr "Итого к оплате:"
+
+#: templates/orders/order/create.html:29
+msgid "Імя"
+msgstr "Имя"
+
+#: templates/orders/order/create.html:33
+msgid "Прізвище"
+msgstr "Фамилия"
+
+#: templates/orders/order/create.html:37
+msgid "Телефон в форматі 0501234567"
+msgstr "Телефон в формате 0501234567"
+
+#: templates/orders/order/created.html:7
+msgid "Дякуємо !!!"
+msgstr "Спасибо !!!"
+
+#: templates/orders/order/created.html:11
+msgid ""
+"Ваш заказ успішно сформовано, найближчим часом менеджер з вами звяжеться . "
+"Номер вашого заказу"
+msgstr ""
+"Ваш заказ успешно сформирован, в ближайшее время менеджер с вами свяжется."
+"Номер вашего заказа"
+
+#: templates/product_deteil.html:15
+msgid "Інструкція"
+msgstr "Инструкция"

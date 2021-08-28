@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-20 17:23+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: r717/settings.py:130
+msgid "Ukraine"
+msgstr ""
+
+#: r717/settings.py:131
+msgid "Russia"
+msgstr ""
+
+#: templates/base.html:35 templates/base.html:90
+msgid "Головна"
+msgstr "Главная"
+
+#: templates/base.html:38 templates/base.html:91
+#, fuzzy
+#| msgid "Про наш офіс"
+msgid "Про нас"
+msgstr "Про наш офис"
+
+#: templates/base.html:41 templates/base.html:92
+msgid "Контакти"
+msgstr "Контакты"
+
+#: templates/base.html:70
+msgid "Промислова хімія"
+msgstr "Промышленная химия"
+
+#: templates/base.html:73
+#, fuzzy
+#| msgid "Розумні технології для бізнесу"
+msgid "Розумні технології "
+msgstr "Умные технологии "
+
+#: templates/base.html:76
+msgid "для  <em>вашого</em> бізнесу"
+msgstr "для  <em>вашего</em> бизнеса"
+
+#: templates/base.html:100 templates/index.html:12
+msgid "Всі продукти"
+msgstr "Вся продукция"
+
+#: templates/base.html:101
+msgid "Рідкі засоби"
+msgstr "Жидкие средства"
+
+#: templates/base.html:102
+msgid "Аерозольні засоби"
+msgstr "Аэрозольные средства"
+
+#: templates/base.html:103
+msgid "Додаткові засоби"
+msgstr "Дополнительные средства"
+
+#: templates/base.html:109
+msgid "Контактна інформація: "
+msgstr "Контактная информация"
+
+#: templates/base.html:114 templates/contact.html:24
+msgid "Київ, вул. Петропавлівська 54а, оф. 202"
+msgstr "Киев, ул. Петропавловская 54а, оф. 202"
+
+#: templates/contact.html:11
+#, fuzzy
+#| msgid "Неше місцезнаходження"
+msgid "Наше місцезнаходження"
+msgstr "Мы находимся здесь"
+
+#: templates/contact.html:21
+msgid "Про наш офіс"
+msgstr "Про наш офис"
+
+#: templates/contact.html:45
+msgid "Написати нам"
+msgstr "Написать нам"
+
+#: templates/contact.html:75
+msgid "Відправити"
+msgstr "Отправить"
+
+#: templates/contact.html:101
+msgid "Станіслав Потапов"
+msgstr "Станислав Потапов"
+
+#: templates/contact.html:102 templates/contact.html:117
+msgid "Інженер-викладач"
+msgstr "Инженер-преподаватель"
+
+#: templates/contact.html:103 templates/contact.html:118
+msgid "Експерт з холодильної техніки"
+msgstr "Эксперт по холодильной техники"
+
+#: templates/contact.html:104
+msgid "Маркетолог."
+msgstr "Маркетолог"
+
+#: templates/contact.html:116
+msgid "Сергій Задорожний "
+msgstr "Сергей Задорожный"
+
+#: templates/contact.html:119
+msgid "Менеджер з продажу."
+msgstr "Менеджер продаж"
+
+#: templates/product_deteil.html:15
+msgid "Інструкція"
+msgstr "Инструкция"
+
+#~ msgid "Імя"
+#~ msgstr "Имя"
+
+#~ msgid "E-Mail Адреса"
+#~ msgstr "E-Mail Адрес"
+
+#~ msgid "Ваше повідомлення"
+#~ msgstr "Ваше сообщение"
+
+#~ msgid "Наші клієнти"
+#~ msgstr "Наши Клиенты"
+
+#~ msgid "Замовити"
+#~ msgstr "Заказать"
+
+#~ msgid "Розумні технології для бізнесу "
+#~ msgstr "Умные технологии для бизнеса"

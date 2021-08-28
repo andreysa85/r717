@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Заказ с сайта № {{order_number}}</h1>
+	<p> Имя заказчика : {{ first_name }}</p>
+	<p> Фамилия заказчика : {{ last_name }} </p>
+	<p> Телефон  заказчика : {{ phone }}</p>
+<table >
+  <thead >
+    <tr>
+      <th style="width: 300px">Продукт</th>
+      <th style="width: 150px">Цена</th>
+      <th style="width: 150px">К-тво</th>
+  </tr>
+</thead>
+<tbody>
+	{% for item in cart %}
+    <tr>
+      <td style="width: 300px">{{item.product.name}}</td>
+      <td style="width: 150px">{{item.product.price}}</td>
+      <td style="width: 150px">{{item.quantity}}</td>
+  	</tr>
+  	{% endfor %}
+</tbody>
+</table>
+		<br>
+		<br>
+	<h2> Сумма заказа:  {{ cart.get_total_price }} </h2>
+</body>
+</html>

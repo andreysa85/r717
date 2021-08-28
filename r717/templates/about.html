@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="container"> 
+<div class="swiper-container mySwiper">
+  <div class="swiper-wrapper">
+    {% for image in images_list %}
+        <div class="swiper-slide">
+            <img src="/static/assets/images/foto_colag/{{image}}" alt="">
+        </div>
+
+    {% endfor %}
+  </div>
+</div>
+<div class="about__us">
+  <div class="about__us_test">
+       {{text_about.about|safe}}
+  </div>
+</div>
+</div>
+{% endblock %}

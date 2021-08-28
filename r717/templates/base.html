@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+{% load static %}
+{% load i18n %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    {% block title %}
+    <title>R717 Розумні системи </title>
+    {% endblock %}
+    <link rel="shortcut icon" href="/static/assets/images/logo.jpg" type="image/png">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="/static/assets/css/templatemo-sixteen.css">
+    <link rel="stylesheet" href="/static/assets/css/owl.css">
+    <link rel="stylesheet" href="/static/assets/css/jquery.rateyo.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  </head>
+
+  <body >
+    <div class="wrapper"> 
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="/static/assets/images/logo.jpg" width="70" height="70" alt="Logo" class="rounded-circle"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link " href="{% url 'home' %}"> {% trans "Головна" %}</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">{% trans "Про нас" %} </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}">{% trans "Контакти" %}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/uk-ua{{ request.get_full_path|slice:'6:'}}">Ua</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/ru-ru{{request.get_full_path|slice:'6:' }}">Ru</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="basket">
+            <div class="basket__cart_count">
+              <span id="count_info" class="basket_icons_sum_int">{{ cart.my_len}}</span>
+            </div>
+             <div class="basket__cart_icons">
+                <a href="{% url 'cart_detail' %}"><img src="/static/assets/images/icons/cart.png" 
+                   width="30" height="30"></a>
+            </div>
+        </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="page-heading contact-heading header-text">
+      <div class="container">
+
+        <div class="header__text__blok"> 
+          <div class="text__content_one">
+            <h4>{% trans "Промислова хімія"%}</h4>
+          </div>
+          <div class="text__content_two">
+            <h2>{% trans "Розумні технології "  %}</h2>
+          </div>
+          <div class="text__content_three">
+            <h2>{% trans "для "%} <em>{% trans "вашого"%}</em>{% trans "  бізнесу"%} </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% block content %}
+
+    {% endblock %}
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__blocks">
+          <div class="blok__links line">
+            <ul>
+           <li><a href="{% url 'home' %}">{% trans "Головна" %}</a></li>
+           <li><a href="{% url 'about' %}">{% trans "Про нас" %}</a></li>
+           <li><a href="{% url 'contact' %}">{% trans "Контакти" %}</a></li>
+           <li><a href="/uk-ua{{ request.get_full_path|slice:'6:'}}">Ua</a></li>
+           <li><a href="/ru-ru{{request.get_full_path|slice:'6:' }}">Ru</a></li>
+         </ul>
+          </div>
+          <div class="blok__links_filter line">
+            <div class="filters">
+            <ul>
+           <li><a href="#">{% trans "Всі продукти" %}</a></li>
+           <li><a href="#">{% trans "Рідкі засоби" %}</a></li>
+           <li><a href="#">{% trans "Аерозольні засоби" %}</a></li>
+           <li><a href="#">{% trans "Додаткові засоби" %}</a></li>
+         </ul>
+       </div>
+          </div>
+          <div class="blok__contacts line">
+            <div class="blok__contacts_title">
+              {% trans "Контактна інформація: " %}
+            </div>
+            <div class="blok__contacts_geo">
+               <i class="fas fa-map-marker-alt fa-2x"></i>
+               <div class="blok__contacts_geo_text">
+                 {% trans "Київ, вул. Петропавлівська 54а, оф. 202" %}
+               </div>
+            </div>
+            <div class="blok__contacts_phone ">
+              <i class="fas fa-phone fa-2x"></i>
+              <div class="blok__contacts_phone_text">
+                +38 063-470-13-38
+              </div>
+            </div>
+            <div class="blok__contacts_mail ">
+              <i class="far fa-envelope fa-2x"></i>
+              <div class="blok__contacts_mail_text">
+                 office@eeg-ua.com
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="/static/assets/js/custom.js"></script>
+    <script src="/static/assets/js/owl.js"></script>
+    <script src="/static/assets/js/slick.js"></script>
+    <script src="/static/assets/js/accordions.js"></script>
+    <script src="https://kit.fontawesome.com/eb3872b4b3.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    {% block scripts %}
+
+    {% endblock %}
+    </div>
+  </body >
+</html>
