@@ -20,8 +20,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '5)p)zl0-__(=lqfd+9aky4s-$&lr4_7c4q)62h7d@udn)jpbn='
-#SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY','5)p)zl0-__(=lqfd+9aky4s-$&lr4_7c4q)62h7d@udn)jpbn=')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 #DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
@@ -230,13 +228,3 @@ CKEDITOR_CONFIGS = {
     }
 }
 
-# Настройка почтового ящика для отправки писем
-#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'mail.eeg-ua.com'
-EMAIL_HOST_USER = 'sale@eeg-ua.com'
-EMAIL_HOST_PASSWORD = 'e$X__n-UXN'
-# если используется защищенное соединение
-EMAIL_PORT = 465
-EMAIL_USE_SSL = True
-#EMAIL_USE_TLS = True
-#####################################################
