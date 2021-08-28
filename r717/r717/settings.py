@@ -20,7 +20,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY','5)p)zl0-__(=lqfd+9aky4s-$&lr4_7c4q)62h7d@udn)jpbn=')
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 DEBUG = False
@@ -221,6 +220,7 @@ CKEDITOR_CONFIGS = {
     }
 }
 
+<<<<<<< HEAD
 # Настройка безопасности 
 # CSRF_COOKIE_SECURE = True
 # CSRF_COOKIE_SAMESITE = 'Strict'
@@ -246,3 +246,5 @@ EMAIL_PORT = 465
 EMAIL_USE_SSL = True
 #EMAIL_USE_TLS = True
 #####################################################
+=======
+>>>>>>> 83ceb11860c58e170bfe72d0a21deb149d285e17
